@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Popsmoke Background */
+  body {
+    background-color: #AFEEEE; /* Popsmoke vibe */
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: #004d40;
+    color: white;
+    padding: 15px 0;
+  }
+  
+  header .logo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Mobile menu toggle */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+  
+  /* About Section */
+  #about {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 28px;
+    color: #004d40;
+  }
+  
+  #about p {
+    margin: 15px auto;
+    max-width: 700px;
+    font-size: 18px;
+  }
+  
+  /* Cookie Banner */
+  #cookieBanner {
+    background: rgba(0, 77, 64, 0.9);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    width: 90%;
+    left: 5%;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  #cookieBanner button {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  #cookieBanner button:hover {
+    background: #ffaa00;
+  }
+  
+  /* Footer */
+  footer {
+    background: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .dotted-line {
+    border-top: 2px dotted #fff;
+    margin: 10px 0;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .social-icons a:hover {
+    color: #ffcc00;
+  }
+  
+  .footer-links {
+    margin: 15px 0;
+  }
+  
+  .footer-links a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+
+  /* Nav Links Hover Effect */
+.nav-links li a {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  transform: scale(1.2); /* increases size */
+  color: #aa9fa4; /* optional: change color on hover */
+}
